@@ -2,10 +2,17 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>Portfolio – [Ton Nom]</title>
+    <title>Portfolio – Marketing & Sport</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio d'un étudiant confirmé en marketing sportif, spécialisé en communication, gestion de projet et volleyball."
+    />
+
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css" />
-    <!-- Police Google Fonts -->
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,196 +20,430 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <!-- En-tête / Hero -->
-    <header class="hero" id="top">
-      <div class="hero-top container">
-        <div class="hero-logo">
-          <!-- Remplace la source par ton logo -->
-          <img src="images/logo-ileps.png" alt="Logo ILEPS" />
-        </div>
-        <div class="hero-photo">
-          <!-- Remplace la source par ta photo -->
-          <img src="images/photo-profil.jpg" alt="Photo de profil" />
-        </div>
-      </div>
 
-      <div class="hero-content container">
-        <h1>Bienvenue sur mon portfolio</h1>
+  <body id="top">
+    <!-- =========================
+         HEADER / NAV
+    ========================== -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#hero" class="brand" aria-label="Retour à l'accueil">
+          <img
+            src="images/logo-ileps.png"
+            alt="Logo"
+            class="brand-logo"
+            loading="lazy"
+          />
+          <div class="brand-text">
+            <span class="brand-name">[Ton Nom]</span>
+            <span class="brand-role">Marketing sportif & communication</span>
+          </div>
+        </a>
 
-        <p class="hero-intro">
-          Passionné par le sport et le volleyball, je construis mon projet
-          professionnel dans le marketing sportif, entre terrain et stratégie
-          de communication.
-        </p>
-
-        <nav class="hero-nav">
-          <a href="#apropos" class="nav-pill">À propos de moi</a>
-          <a href="#parcours" class="nav-pill">Parcours &amp; formation</a>
-          <a href="#competences" class="nav-pill">Compétences</a>
-          <a href="#experiences" class="nav-pill">Expériences professionnelles</a>
-          <a href="#projet" class="nav-pill">Projet professionnel</a>
+        <nav class="main-nav" aria-label="Navigation principale">
+          <button
+            class="burger"
+            aria-label="Ouvrir le menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="nav-links">
+            <li><a href="#hero" class="nav-link active">Accueil</a></li>
+            <li><a href="#apropos" class="nav-link">À propos</a></li>
+            <li><a href="#parcours" class="nav-link">Parcours</a></li>
+            <li><a href="#experiences" class="nav-link">Expériences</a></li>
+            <li><a href="#competences" class="nav-link">Compétences</a></li>
+            <li><a href="#projet" class="nav-link">Projet pro</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
         </nav>
       </div>
     </header>
 
+    <!-- =========================
+         HERO
+    ========================== -->
     <main>
-      <!-- À propos de moi -->
-      <section id="apropos" class="section-card container">
-        <h2>À propos de moi</h2>
-        <p>
-          Passionné par le sport, en particulier le volleyball, je suis
-          actuellement en licence de commercialisation des produits et services
-          sportifs à l’ILEPS. Curieux, rigoureux et créatif, j’aime relever de
-          nouveaux défis et développer des projets sur le long terme.
-        </p>
-        <p>
-          Mon expérience en tant que coach et responsable communication m’a
-          permis de renforcer mon sens de l’organisation et du travail
-          d’équipe. Toujours en quête d’évolution, je cherche à allier ma
-          passion du sport à ma future carrière professionnelle.
-        </p>
-      </section>
+      <section id="hero" class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            <p class="hero-eyebrow">Marketing & sport</p>
+            <h1>
+              Construire des expériences sportives
+              <span class="accent">impactantes</span>
+            </h1>
+            <p class="hero-subtitle">
+              Étudiant confirmé en commercialisation des produits et services
+              sportifs, coach de volleyball et responsable communication,
+              spécialisé dans la création de projets et d’événements qui
+              fédèrent les communautés.
+            </p>
 
-      <!-- Parcours & formation -->
-      <section id="parcours" class="section-card container">
-        <h2>Parcours &amp; formation</h2>
+            <div class="hero-actions">
+              <a href="#contact" class="btn primary">Me contacter</a>
+              <a href="#parcours" class="btn ghost">Découvrir mon parcours</a>
+            </div>
 
-        <div class="grid-2">
-          <div class="bloc">
-            <h3>Formation</h3>
-            <ul class="list">
-              <li>
-                <strong>Licence Commercialisation des Produits et Services
-                  Sportifs – ILEPS (2023–2025)</strong><br />
-                Formation orientée vers la gestion, le marketing et la
-                communication dans le domaine du sport. Développement de
-                compétences en gestion de projet, stratégie commerciale et
-                management d’équipe.
-              </li>
-            </ul>
+            <div class="hero-tags">
+              <span class="tag">Marketing sportif</span>
+              <span class="tag">Communication digitale</span>
+              <span class="tag">Volleyball & beach-volley</span>
+            </div>
           </div>
 
-          <div class="bloc">
-            <h3>Engagement sportif</h3>
-            <p class="bloc-title">Club de Volley-Ball de Pontoise</p>
-            <ul class="list">
-              <li>Coach et directeur marketing depuis 3 ans</li>
-              <li>Encadrement d’une équipe jeune (M18)</li>
-              <li>Gestion des réseaux sociaux et création de contenus visuels</li>
-              <li>
-                Développement de projets liés au beach-volley et à la
-                communication interne
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Expériences pro -->
-      <section id="experiences" class="section-card container">
-        <h2>Expériences professionnelles</h2>
-
-        <div class="grid-2">
-          <div class="bloc">
-            <h3>Alternances</h3>
-            <ul class="list">
-              <li>
-                <strong>Comité Départemental de Volley-Ball du Val-d’Oise</strong>
-                – Alternance actuelle
-              </li>
-              <li>
-                <strong>GoPark Pontoise</strong> – Alternance 2023/2024
-              </li>
-            </ul>
-          </div>
-
-          <div class="bloc">
-            <h3>Stages</h3>
-            <ul class="list">
-              <li>
-                <strong>Office de Tourisme du Haut-Giffre</strong> – Stage
-              </li>
-              <li>
-                <strong>Snipes Cergy</strong> – Stage
-              </li>
-            </ul>
+          <div class="hero-aside reveal">
+            <div class="hero-card">
+              <div class="hero-photo-wrapper">
+                <img
+                  src="images/profile.jpg"
+                  alt="Photo de profil"
+                  class="hero-photo"
+                  loading="lazy"
+                />
+              </div>
+              <div class="hero-meta">
+                <p class="hero-name">[Ton Nom]</p>
+                <p class="hero-role">
+                  Coach M18 & responsable communication<br />
+                  Club de Volley-Ball de Pontoise
+                </p>
+              </div>
+              <ul class="hero-highlights">
+                <li>3+ ans d’expérience en coaching & marketing de club</li>
+                <li>Gestion de projets beach-volley & réseaux sociaux</li>
+                <li>Alternance au comité départemental de Volley-Ball</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Compétences -->
-      <section id="competences" class="section-card container">
-        <h2>Compétences</h2>
+      <!-- =========================
+           À PROPOS
+      ========================== -->
+      <section id="apropos" class="section">
+        <div class="container section-inner reveal">
+          <header class="section-header">
+            <h2>À propos de moi</h2>
+            <p>
+              Un profil hybride entre terrain, stratégie et communication dans
+              l’univers du sport.
+            </p>
+          </header>
 
-        <p>
-          Au fil de mes expériences, j’ai développé de solides compétences en
-          gestion de projet, communication et organisation d’événements
-          sportifs. Mon parcours m’a permis d’affiner mon sens du relationnel,
-          ma rigueur et ma créativité, que j’applique aussi bien sur le terrain
-          qu’en dehors.
-        </p>
-
-        <div class="grid-3 skills-grid">
-          <div class="skill-card">
-            <h3>Compétences métiers</h3>
-            <ul class="list">
-              <li>Gestion de projet &amp; coordination</li>
-              <li>Organisation d’événements sportifs</li>
-              <li>Stratégie de communication</li>
-              <li>Animation de communautés sportives</li>
-            </ul>
-          </div>
-
-          <div class="skill-card">
-            <h3>Compétences numériques</h3>
-            <ul class="list">
-              <li>Canva (création de visuels)</li>
-              <li>Suite Office (Excel, PowerPoint, Word)</li>
-              <li>Gestion des réseaux sociaux</li>
-              <li>Notions de montage photo/vidéo</li>
-            </ul>
-          </div>
-
-          <div class="skill-card">
-            <h3>Compétences linguistiques</h3>
-            <ul class="list">
-              <li>Français : langue maternelle</li>
-              <li>Anglais : niveau intermédiaire</li>
-              <li>Capacité à travailler en équipe multiculturelle</li>
-            </ul>
+          <div class="grid-2">
+            <div>
+              <p>
+                Passionné par le sport, en particulier le volleyball, je suis
+                actuellement en licence de commercialisation des produits et
+                services sportifs à l’ILEPS. Curieux, rigoureux et créatif, j’aime
+                relever de nouveaux défis et développer des projets sur le long
+                terme.
+              </p>
+              <p>
+                Mon expérience en tant que coach et responsable communication
+                m’a permis de renforcer mon sens de l’organisation, du
+                leadership et du travail d’équipe. Je cherche à construire une
+                carrière qui combine performance sportive, stratégie marketing
+                et innovation.
+              </p>
+            </div>
+            <aside class="facts-card">
+              <h3>En bref</h3>
+              <ul class="facts-list">
+                <li><span>Ville :</span> [Ta ville / région]</li>
+                <li><span>Études :</span> Licence CPSS – ILEPS (2023–2025)</li>
+                <li><span>Sport :</span> Volleyball & beach-volley</li>
+                <li><span>Rôle :</span> Coach M18 & directeur marketing club</li>
+              </ul>
+            </aside>
           </div>
         </div>
-
-        <blockquote class="quote">
-          « Dans la vie je ne perds jamais, soit je gagne, soit j’apprends. »
-          <span>– Nelson Mandela</span>
-        </blockquote>
       </section>
 
-      <!-- Projet professionnel -->
-      <section id="projet" class="section-card container">
-        <h2>Projet professionnel</h2>
-        <p>
-          Mon objectif est de construire une carrière dans le marketing sportif,
-          en particulier dans la communication et l’événementiel au sein de
-          clubs, fédérations ou structures sportives innovantes. Je souhaite
-          participer au développement de projets qui valorisent les pratiques
-          sportives, engagent les communautés de fans et créent des expériences
-          mémorables.
-        </p>
-        <p>
-          Je suis ouvert aux opportunités d’alternance ou de postes me
-          permettant de continuer à apprendre, à prendre des responsabilités et
-          à mettre à profit mon expérience de terrain et ma passion pour le
-          sport.
-        </p>
+      <!-- =========================
+           PARCOURS & FORMATION
+      ========================== -->
+      <section id="parcours" class="section alt-bg">
+        <div class="container section-inner reveal">
+          <header class="section-header">
+            <h2>Parcours & formation</h2>
+            <p>
+              Un parcours construit autour du sport, du terrain à la stratégie.
+            </p>
+          </header>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3>Licence CPSS – ILEPS</h3>
+                <span class="timeline-meta">2023 – 2025</span>
+                <p>
+                  Formation orientée vers la gestion, le marketing et la
+                  communication dans le domaine du sport. Développement de
+                  compétences en gestion de projet, stratégie commerciale et
+                  management d’équipe.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3>Engagement club – Volley-Ball Pontoise</h3>
+                <span class="timeline-meta">Depuis 3 ans</span>
+                <p>
+                  Coach et directeur marketing au sein du club. Encadrement
+                  d’une équipe jeune (M18), gestion des réseaux sociaux, création
+                  de contenus, développement de projets liés au beach-volley et à
+                  la communication interne.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           EXPÉRIENCES PRO
+      ========================== -->
+      <section id="experiences" class="section">
+        <div class="container section-inner reveal">
+          <header class="section-header">
+            <h2>Expériences professionnelles</h2>
+            <p>
+              Entre structures sportives, loisirs et tourisme, une vision
+              globale de l’expérience client.
+            </p>
+          </header>
+
+          <div class="grid-2 cards-grid">
+            <article class="card">
+              <h3>Comité Départemental de Volley-Ball du Val-d’Oise</h3>
+              <p class="card-meta">Alternance – Poste actuel</p>
+              <ul class="card-list">
+                <li>Participation au développement territorial du volley.</li>
+                <li>Appui à la communication des événements et compétitions.</li>
+                <li>Coordination avec les clubs et les acteurs locaux.</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>GoPark Pontoise</h3>
+              <p class="card-meta">Alternance 2023 / 2024</p>
+              <ul class="card-list">
+                <li>Accueil, animation et encadrement d’activités ludiques.</li>
+                <li>Contribution à la promotion des offres loisirs.</li>
+                <li>Approche orientée expérience client et satisfaction.</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Office de Tourisme du Haut-Giffre</h3>
+              <p class="card-meta">Stage</p>
+              <ul class="card-list">
+                <li>Support à l’organisation d’animations touristiques.</li>
+                <li>Contribution à la mise en avant des activités sport-nature.</li>
+                <li>Développement du sens du service et de l’accueil.</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Snipes Cergy</h3>
+              <p class="card-meta">Stage</p>
+              <ul class="card-list">
+                <li>Vente, conseil client et merchandising.</li>
+                <li>Travail dans un univers lifestyle lié au sport urbain.</li>
+                <li>Compréhension des logiques retail & image de marque.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           COMPÉTENCES
+      ========================== -->
+      <section id="competences" class="section alt-bg">
+        <div class="container section-inner reveal">
+          <header class="section-header">
+            <h2>Compétences</h2>
+            <p>
+              Un ensemble de compétences transversales au service de projets
+              sportifs ambitieux.
+            </p>
+          </header>
+
+          <div class="grid-3 skills-grid">
+            <article class="card">
+              <h3>Gestion & projet</h3>
+              <ul class="tags-list">
+                <li class="tag">Gestion de projet</li>
+                <li class="tag">Organisation d’événements</li>
+                <li class="tag">Pilotage d’équipe</li>
+                <li class="tag">Planification & coordination</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Communication & digital</h3>
+              <ul class="tags-list">
+                <li class="tag">Stratégie de communication</li>
+                <li class="tag">Réseaux sociaux</li>
+                <li class="tag">Création de contenus</li>
+                <li class="tag">Storytelling sportif</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Outils & langues</h3>
+              <ul class="tags-list">
+                <li class="tag">Canva</li>
+                <li class="tag">Suite Office (Excel, PPT)</li>
+                <li class="tag">Outils de gestion sociale</li>
+                <li class="tag">Anglais – niveau intermédiaire</li>
+              </ul>
+            </article>
+          </div>
+
+          <figure class="quote-card">
+            <blockquote>
+              « Dans la vie je ne perds jamais, soit je gagne, soit j’apprends. »
+            </blockquote>
+            <figcaption>Nelson Mandela</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- =========================
+           PROJET PROFESSIONNEL
+      ========================== -->
+      <section id="projet" class="section">
+        <div class="container section-inner reveal">
+          <header class="section-header">
+            <h2>Projet professionnel</h2>
+            <p>
+              Construire et piloter des projets marketing au cœur du sport.
+            </p>
+          </header>
+
+          <div class="grid-2">
+            <div>
+              <p>
+                Mon objectif est de poursuivre ma carrière dans le marketing
+                sportif, en particulier dans la communication et l’événementiel
+                au sein de clubs, fédérations ou structures sportives
+                innovantes. Je souhaite contribuer à la création d’expériences
+                fortes pour les pratiquants, les fans et les partenaires.
+              </p>
+              <p>
+                Je suis à la recherche d’opportunités me permettant de continuer
+                à apprendre, à prendre des responsabilités et à mettre à profit
+                mon expertise terrain et ma culture du sport.
+              </p>
+            </div>
+            <aside class="focus-card">
+              <h3>Ce que je recherche</h3>
+              <ul class="card-list">
+                <li>Alternance ou poste en marketing / communication sportive</li>
+                <li>Environnement exigeant et orienté projet</li>
+                <li>Possibilité de mêler terrain, événementiel et digital</li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           CONTACT
+      ========================== -->
+      <section id="contact" class="section alt-bg">
+        <div class="container section-inner reveal">
+          <header class="section-header">
+            <h2>Contact</h2>
+            <p>
+              Une opportunité, une collaboration ou un projet ? Parlons-en.
+            </p>
+          </header>
+
+          <div class="contact-grid">
+            <div>
+              <ul class="contact-list">
+                <li>
+                  <span>Email :</span>
+                  <a href="mailto:prenom.nom@email.com"
+                    >prenom.nom@email.com</a
+                  >
+                </li>
+                <li>
+                  <span>Téléphone :</span>
+                  <a href="tel:+33600000000">+33 6 00 00 00 00</a>
+                </li>
+                <li>
+                  <span>LinkedIn :</span>
+                  <a href="https://www.linkedin.com" target="_blank"
+                    >Profil LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <form class="contact-form" autocomplete="off">
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="name">Nom</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Votre nom"
+                  />
+                </div>
+                <div class="form-field">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Votre email"
+                  />
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Votre message..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn primary full-width">
+                Envoyer (non-fonctionnel – démo)
+              </button>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>© 2025 [Ton Nom] – Portfolio</p>
-      <a href="#top" class="back-to-top">Retour en haut</a>
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2025 [Ton Nom] – Portfolio marketing sportif</p>
+        <a href="#top" class="back-to-top" aria-label="Retour en haut">
+          ↑ Haut de page
+        </a>
+      </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
   </body>
 </html>
