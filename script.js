@@ -29,9 +29,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 // ===========================
 // NAV ACTIVE ON SCROLL
 // ===========================
-const sections = document.querySelectorAll(
-  "section[id]"
-);
+const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll(".nav-link");
 
 function onScrollUpdateNav() {
