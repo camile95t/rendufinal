@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <title>Portfolio – Truchon Camile</title>
@@ -41,6 +41,11 @@
         </a>
 
         <nav class="main-nav" aria-label="Navigation principale">
+          <!-- Bouton thème Jour / Nuit -->
+          <button class="theme-toggle" type="button" aria-label="Activer le mode clair">
+            <span class="theme-icon">🌙</span>
+          </button>
+
           <button
             class="burger"
             aria-label="Ouvrir le menu"
@@ -84,6 +89,13 @@
               <a href="#contact" class="btn primary">Me contacter</a>
               <a href="#parcours" class="btn ghost">Découvrir mon parcours</a>
               <a
+                href="cv-camile-truchon.pdf"
+                class="btn ghost"
+                download="CV-Camile-Truchon.pdf"
+              >
+                Télécharger mon CV
+              </a>
+              <a
                 href="https://www.linkedin.com/in/camile-truchon-684706295/"
                 class="btn ghost"
                 target="_blank"
@@ -105,8 +117,8 @@
             <div class="hero-card">
               <div class="hero-photo-wrapper">
                 <img
-                  src="images/profile.jpg"
-                  alt="Photo de Truchon Camile"
+                  src="images/camile-truchon.jpg"
+                  alt="Portrait de Camile Truchon"
                   class="hero-photo"
                   loading="lazy"
                 />
