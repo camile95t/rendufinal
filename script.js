@@ -108,6 +108,46 @@ if (burger && nav) {
 }
 
 // ===========================
+// THEME TOGGLE (LIGHT / DARK)
+// ===========================
+const themeToggle = document.querySelector(".theme-toggle");
+const THEME_KEY = "portfolio-theme";
+
+function applyTheme(theme) {
+  // theme = 'light' ou 'dark'
+  document.documentElement.setAttribute("data-theme", theme);
+
+  if (themeToggle) {
+    const icon = themeToggle.querySelector(".theme-icon");
+    if (icon) {
+      icon.textContent = theme === "light" ? "☀️" : "🌙";
+    }
+    themeToggle.setAttribute(
+      "aria-label",
+      theme === "light"
+        ? "Activer le mode sombre"
+        : "Activer le mode clair"
+    );
+  }
+}
+
+// Thème initial : préférence stockée ou défaut sombre
+const storedTheme = localStorage.getItem(THEME_KEY);
+const initialTheme =
+  storedTheme === "light" || storedTheme === "dark" ? storedTheme : "dark";
+
+applyTheme(initialTheme);
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    const current = document.documentElement.getAttribute("data-theme") || "dark";
+    const next = current === "dark" ? "light" : "dark";
+    applyTheme(next);
+    localStorage.setItem(THEME_KEY, next);
+  });
+}
+
+// ===========================
 // BACK TO TOP VISIBILITY
 // ===========================
 const backToTop = document.querySelector(".back-to-top");
